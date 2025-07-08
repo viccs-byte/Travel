@@ -2,12 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travel Explorer - Your Gateway to the World</title>
-  <meta name="description" content="Find your next journey! Explore destinations, book tours, and travel the world with us." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wander Lust - Travel Agency</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
-  <div id="app"></div>
-  <script src="main.js"></script>
+  <nav class="navbar">
+    <div class="container">
+      <h2 class="logo">Wander Lust</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#places">Places</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <header id="home">
+    <h1 data-aos="fade-down">Wander Lust</h1>
+    <p data-aos="fade-up">Your adventure starts here</p>
+  </header>
+
+  <section class="places" id="places">
+    <h2 data-aos="zoom-in">Top Destinations</h2>
+    <div class="scrolling-wrapper">
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris at sunset">
+        <p>Paris</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=800&q=80" alt="Beach in Bali">
+        <p>Bali</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="New York city skyline">
+        <p>New York</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Tokyo street night view">
+        <p>Tokyo</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80" alt="Ancient ruins in Rome">
+        <p>Rome</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Dubai cityscape">
+        <p>Dubai</p>
+      </div>
+      <div class="place-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80" alt="Overwater villas in Maldives">
+        <p>Maldives</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <h2 data-aos="fade-up">Travel Packages</h2>
+    <div class="package basic" data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="Nature trail - Basic pack">
+      <div class="content">
+        <h3>Basic Pack</h3>
+        <p>2 Days, 2 Nights - Ideal for quick getaways<br>₹10,000</p>
+      </div>
+    </div>
+    <div class="package moderate" data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=60" alt="Beach resort - Moderate pack">
+      <div class="content">
+        <h3>Moderate Pack</h3>
+        <p>4 Days, 3 Nights - Balanced for travel & fun<br>₹18,000</p>
+      </div>
+    </div>
+    <div class="package premium" data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=60" alt="Luxury retreat - Premium pack">
+      <div class="content">
+        <h3>Premium Pack</h3>
+        <p>7 Days, 6 Nights - Luxury travel at its best<br>₹35,000</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 data-aos="fade-up">About Us</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Wander Lust is your go-to travel partner for extraordinary experiences. Whether you’re seeking a weekend getaway or a full-fledged vacation, our team curates the best destinations, affordable packages, and memorable adventures. With a passion for exploration and customer satisfaction, we make your travel dreams come true.
+    </p>
+  </section>
+  
+  <section class="contact" id="contact">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Have questions or ready to book your next trip?</p>
+    <form data-aos="fade-up" data-aos-delay="200" class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    const wrapper = document.querySelector('.scrolling-wrapper');
+    let scrollInterval;
+    if (wrapper) {
+      wrapper.addEventListener('mouseenter', () => {
+        scrollInterval = setInterval(() => {
+          wrapper.scrollLeft += 2;
+          if (wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth) {
+            wrapper.scrollLeft = 0;
+          }
+        }, 16);
+      });
+      wrapper.addEventListener('mouseleave', () => {
+        clearInterval(scrollInterval);
+      });
+    }
+  </script>
 </body>
 </html>
